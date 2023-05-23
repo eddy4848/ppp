@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+.main-container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aqua; */
+}
+.left{
+    width: 30%;
+    height: 100%;
+}
+
+.right{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fb{
+    position: absolute;
+    left: 170px;
+    top: 140px;
+
+}
+.bk{
+    position: absolute;
+    left: 260px;
+    top: 420px;
+}
+
+.content{
+    /* background-color: blueviolet;     */
+    width: 40%;
+    height: 50%;
+}
+
+.card{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;   
+    letter-spacing: 1.5px;
+}
+
+.text{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+   border: solid 0.1px rgba(32, 31, 31, 0.321);
+    /* border: none; */
+    
+
+    
+}
+p{
+    font-size: 10px;
+    margin-top: 8px;
+    color: rgba(255, 0, 0, 0.578);
+
+}
+
+.sec{
+  
+    height: 24%;
+    width: 75%;
+    display: flex;
+}
+.l{
+    /* background-color: gray; */
+    width: 100%;
+    height: 100%;
+}
+.r{
+
+    width: 50%;
+    height: 100%;
+}
+.cn{
+    width: 35%;
+    border-radius: 5px;
+    height: 30%;
+    border: solid 0.1px rgba(32, 31, 31, 0.321);
+    margin-top: 10px;
+}
+.cv{
+    width: 100%;
+    border-radius: 5px;
+    height: 30%;
+    border: solid 0.1px rgba(32, 31, 31, 0.321);
+    margin-top: 10px;
+}
+
+button{
+    width: 90%;
+    height: 40px;
+        background-color: hsl(279.47deg 65.52% 11.37%);
+        color: white;
+        border-radius: 6px;
+         border: solid 0.1px rgba(32, 31, 31, 0.321);
+         cursor: pointer;
+         transition: all ease-in-out 0.3s;
+
+}
+button:hover{
+    background-color: white;
+    color: hsl(279.47deg 65.52% 11.37%);
+}
+.paa{
+    width: 3400px;
+    height: 822px;
+}
+
+@media screen and (max-width: 450px) {
+    .paa{
+        
+        width: 380px;
+    height: 250px;
+    }
+    .main-container{
+        flex-direction: column;
+    }
+    .fb{
+        width: 290px;
+        position: absolute;
+        left: 20px;
+        top: 150px;
+        z-index: 1; 
+       
+
+    }
+    .bk{
+          width: 290px;
+        position: absolute;
+        left: 80px;
+        top: 40px;
+        
+       
+    }
+    .right{
+        display: block;
+        padding-left: 20px;
+        height: 300px;
+        width: 100%;
+        /* background-color: red; */
+    }
+    .content{
+        width: 100%;
+    }
+    .left{
+        height: 55vh;
+    }
+    .text{
+        width: 90%;
+    }
+    .sec{
+        height: 70%;
+    }
+}
